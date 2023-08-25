@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-context {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.nav-context a{
+    padding: 0% 2%;
+    margin-left: 3%;
+    font-family: 'Open Sans', sans-serif ;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    position: relative;
+}
+.nav-context a::after {   
+ 
+    background: transparent ;
+    bottom: -25px;
+    content: " ";
+    display: block;
+    height: 5px;    
+    left: 50%;
+    right: 50%;
+    position: absolute;
+    background: rgb(48, 92, 239);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0 ;
+  }
+  .nav-context a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+.AwBtn{
+    width: 18px;
+    height: 18px;
+    transition: all 0.4s ease;
+}
+.AwBtn:hover {
+    transform: rotateZ(-180deg);
+  }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="nav">
+        <div class="paypal"><img src="./trademark/pay.svg" class="logo" alt=""></div>
+       <div class="nav-context" >
+        <a href="#">INDIVIDUAL </a>
+        <img src="assets/images/icons8-expand-arrow-50.png" alt="" class="AwBtn">
+       
+        <a href="#">BUSINESS</a>
+            <img src="./icons8-expand-arrow-50.png" alt="" class="AwBtn">
+        
+        
+        <a href="#" class="hover-underline-animation">PARTNER</a>
+        <img src="./icons8-expand-arrow-50.png" alt="" class="AwBtn">
+        
+
+        <a href="#" class="hover-underline-animation">USEFUL INFO </a>
+            <img src="./icons8-expand-arrow-50.png" alt="" class="AwBtn">
+           
+       </div>
+        
+        <div class="Log-Side">
+            <a href="#">Login</a>
+            <a href="#" >SignUp</a>
+        </div>
+    </div>
+</header>
+</body>
+</html>
